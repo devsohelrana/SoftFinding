@@ -42,10 +42,40 @@
             </a>
           </div>
 
+          <!-- hum icon -->
+          <div class="flex md:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+              />
+            </svg>
+          </div>
+
           <!-- Main navigation -->
-          <ul class="flex justify-center items-center">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#service">Services</a></li>
+          <ul class="hidden md:flex justify-center items-center gap-4">
+            <li>
+              <a
+                href=""
+                class="px-4 py-2 bg-primary rounded-md text-lg font-normal hover:bg-l-pink transition-all duration-500"
+                >Product</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="px-4 py-2 bg-primary rounded-md text-lg font-normal hover:bg-l-pink transition-all duration-500"
+                >Pricing</a
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -55,17 +85,17 @@
       <!-- hero section -->
       <section
         id="hero"
-        class="relative h-auto lg:min-h-screen w-full flex justify-center items-center py-24 bg-gradient-to-b from-l-green to-white backdrop-blur-3xl overflow-x-hidden"
+        class="relative h-auto lg:min-h-screen w-full flex justify-center items-center py-24 bg-gradient-to-b from-l-green to-white backdrop-blur-3xl overflow-hidden"
       >
         <!-- Building Blurry Hero Section -->
         <div
           class="absolute top-0 left-0 w-[600px] h-[600px] bg-l-pink filter blur-[100px] mix-blend-multiply animate-blob rounded-full -z-10"
         ></div>
         <div
-          class="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-l-green filter blur-[100px] mix-blend-multiply animate-blob animation-delay-2000 rounded-full -z-10"
+          class="absolute top-[10%] left-[30%] w-[600px] h-[600px] bg-l-green filter blur-[100px] mix-blend-multiply animate-blob animation-delay-2000 rounded-full -z-10"
         ></div>
         <div
-          class="absolute bottom-0 right-0 w-[600px] h-[600px] bg-l-yellow filter blur-[100px] mix-blend-multiply animate-blob animation-delay-4000 rounded-full -z-10"
+          class="absolute bottom-1/4 right-0 w-[600px] h-[600px] bg-l-yellow filter blur-[100px] mix-blend-multiply animate-blob animation-delay-4000 rounded-full -z-10"
         ></div>
 
         <div class="container mx-auto px-2 md:px-0">
@@ -73,12 +103,12 @@
             <div class="flex justify-center items-center flex-col space-y-10">
               <!-- Hero text -->
               <h2
-                class="text-3xl lg:text-[60px] font-exo font-extrabold md:leading-[80px] text-center mx-4 md:mx-0"
+                class="text-2xl lg:text-5xl font-exo font-extrabold uppercase text-center mx-4 md:mx-0"
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
-                Empowering Growth Through <br />
-                Technology.
+                Empowering Businesses Through <br />
+                Innovative Web Solutions
               </h2>
               <p
                 class="lg:w-2/4 text-center font-lato text-lg font-medium mx-4 md:mx-0"
@@ -140,57 +170,167 @@
       </section>
 
       <!-- service section -->
-      <section
+      <!-- <section
         id="service"
         class="flex justify-center items-center h-screen w-full"
       >
         <div class="container mx-auto px-2 md:px-0">
           <h2 class="text-center">What we offer</h2>
         </div>
+      </section> -->
+
+      <!-- Founder Section -->
+      <section
+        id="ceo"
+        class="flex justify-center items-center flex-col py-24 overflow-hidden"
+      >
+        <div class="container mx-auto px-2 md:px-0">
+          <div class="">
+            <h2
+              class="text-2xl lg:text-5xl font-exo font-bold text-center uppercase"
+            >
+              Visionary Insights
+            </h2>
+            <div
+              class="grid grid-cols-1 lg:grid-cols-[1fr_1fr] items-center justify-center gap-8 my-4 lg:my-24"
+            >
+              <div class="relative">
+                <!-- Building Blurry -->
+                <div
+                  class="absolute top-0 left-0 w-72 h-72 bg-l-pink rounded-full mix-blend-multiply filter blur-[70px] opacity-70 animate-blob"
+                ></div>
+                <div
+                  class="absolute top-0 left-2/4 w-72 h-72 bg-l-green rounded-full mix-blend-multiply filter blur-[70px] opacity-70 animate-blob animation-delay-2000"
+                ></div>
+                <div
+                  class="absolute top-0 right-0 w-72 h-72 bg-l-yellow rounded-full mix-blend-multiply filter blur-[70px] opacity-70 animate-blob animation-delay-4000"
+                ></div>
+
+                <div
+                  class="w-auto max-w-60 mx-auto rounded-s-full rounded-b-full border-2 border-green-300 shadow-lg overflow-hidden backdrop-blur-[100px] mix-blend-multiply"
+                >
+                  <img
+                    src="./assets/img/founder.jpg"
+                    alt=""
+                    class="w-full h-full object-cover transition duration-300"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <p class="text-justify font-lato text-lg">
+                  Sohel Rana is the founder of Soft Finding and a BBA student at
+                  Pabna University of Science and Technology. With over 5 years
+                  of experience in the technological sector, he has a strong
+                  background in web development and programming. Through Soft
+                  Finding, Sohel is committed to providing top-quality website
+                  design and development services, helping businesses establish
+                  a strong online presence. His goal is to leverage his
+                  expertise to deliver innovative and tailored digital solutions
+                  for clients.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Footer Section -->
       <section
         id="footerTop"
-        class="py-24 bg-gradient-to-b from-white to-l-green"
+        class="py-10 bg-gradient-to-b from-white to-l-green"
       >
         <div class="container mx-auto px-2 md:px-0">
           <div
-            class="flex justify-around items-start gap-6 flex-col md:flex-row"
+            class="flex justify-between items-start gap-6 flex-col md:flex-row"
           >
             <!-- Office area -->
-            <div class="w-full">
-              <h2>Office Address</h2>
-              <p>Rajapur, Pabna Sadar, Pabna</p>
-              <p>Support: web@softfinding.tech</p>
-              <p>Helpline: 01822-079983</p>
-              <p>(Available: Sat - Thu, 10:00 AM to 7:00 PM)</p>
+            <div class="w-full flex justify-center items-center flex-col">
+              <h2 class="footHeading text-xl font-exo font-semibold py-2">
+                Office Address
+              </h2>
+              <div class="py-4 text-lg font-medium font-lato">
+                <p>Rajapur, Pabna Sadar, Pabna</p>
+                <p>Support: web@softfinding.tech</p>
+                <p>Helpline: 01822-079983</p>
+                <p>(Available: Sat - Thu)</p>
+              </div>
             </div>
             <!-- Page link -->
-            <div class="w-full">
-              <h2>Useful Links</h2>
-              <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms and Condition</a></li>
+            <div class="w-full flex justify-center items-center flex-col">
+              <h2 class="footHeading text-xl font-exo font-semibold py-2">
+                Useful Links
+              </h2>
+              <ul class="py-4">
+                <li>
+                  <a
+                    href="#"
+                    class="text-lg font-medium font-lato hover:text-green-600"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-lg font-medium font-lato hover:text-green-600"
+                    >Contact</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-lg font-medium font-lato hover:text-green-600"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-lg font-medium font-lato hover:text-green-600"
+                    >Terms and Condition</a
+                  >
+                </li>
               </ul>
             </div>
             <!-- Social link -->
-            <div class="w-full">
-              <h2>follow us</h2>
-              <ul>
-                <li>
-                  <a href="#" aria-label="LinkedIn">
+            <div class="w-full flex justify-center items-center flex-col">
+              <h2 class="footHeading text-xl font-exo font-semibold py-2">
+                Follow us
+              </h2>
+              <ul class="flex justify-center items-center flex-wrap gap-6 py-4">
+                <li class="footSocial">
+                  <a
+                    href="https://www.linkedin.com/company/softfinding"
+                    target="_blank"
+                    aria-label="LinkedIn"
+                  >
                     <i class="fa-brands fa-linkedin-in"></i>
                   </a>
-                  <a href="#" aria-label="Facebook">
+                </li>
+                <li class="footSocial">
+                  <a
+                    href="https://www.facebook.com/softfinding/"
+                    target="_blank"
+                    aria-label="Facebook"
+                  >
                     <i class="fa-brands fa-facebook"></i>
                   </a>
-                  <a href="#" aria-label="Email">
+                </li>
+                <li class="footSocial">
+                  <a
+                    href="mailto:softfinding.tech@gmail.com"
+                    target="_blank"
+                    aria-label="Email"
+                  >
                     <i class="fa-solid fa-envelope"></i>
                   </a>
-                  <a href="#" aria-label="Website">
+                </li>
+                <li class="footSocial">
+                  <a
+                    href="https://www.softfinding.tech/"
+                    target="_blank"
+                    aria-label="Website"
+                  >
                     <i class="fa-solid fa-globe"></i>
                   </a>
                 </li>

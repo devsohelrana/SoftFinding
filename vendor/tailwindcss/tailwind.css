@@ -35,6 +35,13 @@ nav.navbar.sticky {
   @apply bg-primary py-2 shadow-xl;
 }
 
+nav.navbar.sticky ul li a {
+  @apply bg-l-green;
+}
+nav.navbar.sticky ul li:hover a {
+  @apply bg-l-pink;
+}
+
 /* Scroll To Top */
 #progress {
   position: fixed;
@@ -68,4 +75,21 @@ nav.navbar.sticky {
   .animation-delay-4000 {
     animation-delay: 4s;
   }
+}
+
+/* footer top */
+.footHeading {
+  @apply relative;
+}
+.footHeading::after {
+  @apply absolute left-2/4 -translate-x-2/4 bottom-0 w-2/4 h-[3px] bg-green-300 rounded-full;
+  content: "";
+}
+.footHeading::before {
+  @apply absolute left-0 bottom-[1px] w-full h-[1px] bg-l-green rounded-full;
+  content: "";
+}
+
+.footSocial {
+  @apply w-10 h-10 bg-white rounded-full flex justify-center items-center shadow-xl border border-l-green hover:bg-green-300 cursor-pointer transition-all duration-500;
 }
