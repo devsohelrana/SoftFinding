@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <!-- Meta -->
     <meta charset="UTF-8" />
@@ -11,6 +11,15 @@
     <title>Soft Finding | Tech Solution</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
+    <!-- Font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- AOS -->
     <link rel="stylesheet" href="./vendor/aos/css/aos.css" />
 
@@ -18,36 +27,63 @@
     <link rel="stylesheet" href="./assets/css/app.css" />
   </head>
   <body>
-    <!-- <div class="w-96 h-96 bg-l-pink blur-3xl"></div>
-    <div class="w-96 h-96 bg-l-green blur-[150px]"></div>
-    <div class="w-96 h-96 bg-l-yellow blur-[150px]"></div>
-    <h1 class="text-text">Soft Finding Tech Solution</h1> -->
+    <!-- Navigation section -->
+    <nav class="navbar fixed top-0 left-0 w-full py-6 z-50">
+      <div class="container mx-auto px-2 md:px-0">
+        <div class="flex justify-between items-center">
+          <!-- Brand -->
+          <div class="w-28">
+            <a href="#">
+              <img
+                src="./assets/img/Soft Finding Logo.png"
+                alt="Soft Finding"
+                class="w-full"
+              />
+            </a>
+          </div>
 
-    <main>
+          <!-- Main navigation -->
+          <ul class="flex justify-center items-center">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#service">Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="relative">
       <!-- hero section -->
       <section
         id="hero"
-        class="relative h-screen w-full bg-primary overflow-hidden"
+        class="relative h-auto lg:min-h-screen w-full flex justify-center items-center py-24 bg-gradient-to-b from-l-green to-white backdrop-blur-3xl overflow-x-hidden"
       >
+        <!-- Building Blurry Hero Section -->
         <div
-          class="absolute top-1/4 left-1/4 -translate-x-1/4 -translate-y-1/4 w-[600px] h-[600px] bg-l-pink blur-[80px] rounded-full z-0"
+          class="absolute top-0 left-0 w-[600px] h-[600px] bg-l-pink filter blur-[100px] mix-blend-multiply animate-blob rounded-full -z-10"
         ></div>
+        <div
+          class="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-l-green filter blur-[100px] mix-blend-multiply animate-blob animation-delay-2000 rounded-full -z-10"
+        ></div>
+        <div
+          class="absolute bottom-0 right-0 w-[600px] h-[600px] bg-l-yellow filter blur-[100px] mix-blend-multiply animate-blob animation-delay-4000 rounded-full -z-10"
+        ></div>
+
         <div class="container mx-auto px-2 md:px-0">
-          <div
-            class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-full z-10"
-          >
-            <div
-              class="flex justify-center items-center flex-col h-screen space-y-20"
-            >
+          <div class="w-full z-10">
+            <div class="flex justify-center items-center flex-col space-y-10">
               <!-- Hero text -->
               <h2
                 class="text-3xl lg:text-[60px] font-exo font-extrabold md:leading-[80px] text-center mx-4 md:mx-0"
+                data-aos="fade-up"
+                data-aos-delay="100"
               >
                 Empowering Growth Through <br />
                 Technology.
               </h2>
               <p
                 class="lg:w-2/4 text-center font-lato text-lg font-medium mx-4 md:mx-0"
+                data-aos="fade-up"
+                data-aos-delay="200"
               >
                 Soft Finding, helps businesses and individuals grow by providing
                 advanced technological solutions. It emphasizes that technology
@@ -56,11 +92,15 @@
               </p>
 
               <!-- Counter -->
-              <div class="counter">
+              <div class="counter md:pt-20">
                 <ul
-                  class="flex justify-center items-center flex-col md:flex-row gap-10"
+                  class="flex justify-center items-center flex-col md:flex-row gap-10 pointer-events-none select-none"
                 >
-                  <li class="flex justify-center items-center flex-col">
+                  <li
+                    class="flex justify-center items-center flex-col"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                  >
                     <span class="num text-3xl font-bold font-exo" data-val="5"
                       >00</span
                     >
@@ -68,7 +108,11 @@
                       >Years of Experience</span
                     >
                   </li>
-                  <li class="flex justify-center items-center flex-col">
+                  <li
+                    class="flex justify-center items-center flex-col"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                  >
                     <span class="num text-3xl font-bold font-exo" data-val="50"
                       >00</span
                     >
@@ -76,7 +120,11 @@
                       >Successful Projects</span
                     >
                   </li>
-                  <li class="flex justify-center items-center flex-col">
+                  <li
+                    class="flex justify-center items-center flex-col"
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                  >
                     <span class="num text-3xl font-bold font-exo" data-val="45"
                       >00</span
                     >
@@ -92,14 +140,85 @@
       </section>
 
       <!-- service section -->
-      <!-- <section id="service" class="h-screen">
+      <section
+        id="service"
+        class="flex justify-center items-center h-screen w-full"
+      >
         <div class="container mx-auto px-2 md:px-0">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque sunt
-          magnam odit quidem consequuntur voluptates voluptatem odio nihil
-          pariatur ipsum.
+          <h2 class="text-center">What we offer</h2>
         </div>
-      </section> -->
+      </section>
+
+      <!-- Footer Section -->
+      <section
+        id="footerTop"
+        class="py-24 bg-gradient-to-b from-white to-l-green"
+      >
+        <div class="container mx-auto px-2 md:px-0">
+          <div
+            class="flex justify-around items-start gap-6 flex-col md:flex-row"
+          >
+            <!-- Office area -->
+            <div class="w-full">
+              <h2>Office Address</h2>
+              <p>Rajapur, Pabna Sadar, Pabna</p>
+              <p>Support: web@softfinding.tech</p>
+              <p>Helpline: 01822-079983</p>
+              <p>(Available: Sat - Thu, 10:00 AM to 7:00 PM)</p>
+            </div>
+            <!-- Page link -->
+            <div class="w-full">
+              <h2>Useful Links</h2>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Condition</a></li>
+              </ul>
+            </div>
+            <!-- Social link -->
+            <div class="w-full">
+              <h2>follow us</h2>
+              <ul>
+                <li>
+                  <a href="#" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                  <a href="#" aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                  </a>
+                  <a href="#" aria-label="Website">
+                    <i class="fa-solid fa-globe"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- Footer section -->
+    <footer id="footer" class="py-3 bg-l-green">
+      <div class="container mx-auto px-2 md:px-0">
+        <p class="text-center m-0">
+          &copy;
+          <a
+            href="https://softfinding.tech/"
+            rel="noopener"
+            target="_blank"
+            class="link-offset-2 link-underline link-underline-opacity-0 hover:text-sky-500 transition duration-300"
+            >Soft Finding</a
+          >
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </p>
+      </div>
+    </footer>
 
     <!-- Scroll To Top -->
     <div id="progress">
@@ -110,7 +229,7 @@
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="size-6"
+          class="size-4"
         >
           <path
             stroke-linecap="round"

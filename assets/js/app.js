@@ -1,3 +1,9 @@
+// Sticky Navbar
+window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
+    navbar.classList.toggle("sticky", window.scrollY > 0);
+});
+
 // Hero Section Stats Counter Animation
 let animatedNums = document.querySelectorAll(".num");
 let interval = 5000;
@@ -39,7 +45,7 @@ let calcScrollValue = () => {
         document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
     });
 
-    scrollProgress.style.background = `conic-gradient(#00a6fb ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+    scrollProgress.style.background = `conic-gradient(#55efa0 ${scrollValue}%, #EDFEF6 ${scrollValue}%)`;
 };
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;

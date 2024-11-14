@@ -4,6 +4,37 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  /* Scrollbar Customized */
+  /* width */
+  ::-webkit-scrollbar {
+    @apply w-1 h-1;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    @apply bg-primary;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gradient-to-b from-green-400 to-l-green rounded-md;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gradient-to-b from-l-green to-green-400;
+  }
+}
+
+/* Navigation */
+nav.navbar {
+  @apply transition-all duration-700;
+}
+nav.navbar.sticky {
+  @apply bg-primary py-2 shadow-xl;
+}
+
 /* Scroll To Top */
 #progress {
   position: fixed;
@@ -27,5 +58,14 @@
   display: grid;
   place-items: center;
   font-size: 18px;
-  color: var(--primary);
+  color: #aa55ef;
+}
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
 }
