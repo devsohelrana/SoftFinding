@@ -679,6 +679,10 @@ video {
   top: 10%;
 }
 
+.left-\[50\%\]{
+  left: 50%;
+}
+
 .-z-10{
   z-index: -10;
 }
@@ -825,8 +829,16 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.flex-row-reverse{
+  flex-direction: row-reverse;
+}
+
 .flex-col{
   flex-direction: column;
+}
+
+.flex-col-reverse{
+  flex-direction: column-reverse;
 }
 
 .flex-wrap{
@@ -873,6 +885,10 @@ video {
 
 .overflow-hidden{
   overflow: hidden;
+}
+
+.overflow-x-hidden{
+  overflow-x: hidden;
 }
 
 .scroll-smooth{
@@ -1303,6 +1319,18 @@ nav.navbar.sticky ul li:hover a{
 
   .md\:pt-20{
     padding-top: 5rem;
+  }
+
+  .md\:pt-28{
+    padding-top: 7rem;
+  }
+
+  .md\:pt-3{
+    padding-top: 0.75rem;
+  }
+
+  .md\:pt-36{
+    padding-top: 9rem;
   }
 }
 
