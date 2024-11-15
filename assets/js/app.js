@@ -49,9 +49,3 @@ let calcScrollValue = () => {
 };
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
-
-
-
-
-// INITIALIZE AOS
-AOS.init();

@@ -20,9 +20,6 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- AOS -->
-    <link rel="stylesheet" href="./vendor/aos/css/aos.css" />
-
     <!-- Main Style Sheet -->
     <link rel="stylesheet" href="./assets/css/app.css" />
   </head>
@@ -104,16 +101,12 @@
               <!-- Hero text -->
               <h2
                 class="text-2xl lg:text-5xl font-exo font-extrabold uppercase text-center mx-4 md:mx-0"
-                data-aos="fade-up"
-                data-aos-delay="100"
               >
                 Empowering Businesses Through <br />
                 Innovative Web Solutions
               </h2>
               <p
                 class="lg:w-2/4 text-center font-lato text-lg font-medium mx-4 md:mx-0"
-                data-aos="fade-up"
-                data-aos-delay="200"
               >
                 Soft Finding, helps businesses and individuals grow by providing
                 advanced technological solutions. It emphasizes that technology
@@ -128,8 +121,6 @@
                 >
                   <li
                     class="flex justify-center items-center flex-col"
-                    data-aos="fade-up"
-                    data-aos-delay="300"
                   >
                     <span class="num text-3xl font-bold font-exo" data-val="5"
                       >00</span
@@ -140,8 +131,6 @@
                   </li>
                   <li
                     class="flex justify-center items-center flex-col"
-                    data-aos="fade-up"
-                    data-aos-delay="400"
                   >
                     <span class="num text-3xl font-bold font-exo" data-val="50"
                       >00</span
@@ -152,8 +141,6 @@
                   </li>
                   <li
                     class="flex justify-center items-center flex-col"
-                    data-aos="fade-up"
-                    data-aos-delay="500"
                   >
                     <span class="num text-3xl font-bold font-exo" data-val="45"
                       >00</span
@@ -169,22 +156,12 @@
         </div>
       </section>
 
-      <!-- service section -->
-      <!-- <section
-        id="service"
-        class="flex justify-center items-center h-screen w-full"
-      >
-        <div class="container mx-auto px-2 md:px-0">
-          <h2 class="text-center">What we offer</h2>
-        </div>
-      </section> -->
-
       <!-- Founder Section -->
       <section
         id="ceo"
-        class="flex justify-center items-center flex-col py-24 overflow-hidden"
+        class="flex justify-center items-center flex-col py-8 overflow-hidden"
       >
-        <div class="container mx-auto px-2 md:px-0">
+        <div class="container mx-auto px-4 md:px-0">
           <div class="">
             <h2
               class="text-2xl lg:text-5xl font-exo font-bold text-center uppercase"
@@ -192,7 +169,7 @@
               Visionary Insights
             </h2>
             <div
-              class="grid grid-cols-1 lg:grid-cols-[1fr_1fr] items-center justify-center gap-8 my-4 lg:my-24"
+              class="grid grid-cols-1 lg:grid-cols-[1fr_1fr] items-center justify-center gap-8 my-8"
             >
               <div class="relative">
                 <!-- Building Blurry -->
@@ -207,8 +184,13 @@
                 ></div>
 
                 <div
-                  class="w-auto max-w-60 mx-auto rounded-s-full rounded-b-full border-2 border-green-300 shadow-lg overflow-hidden backdrop-blur-[100px] mix-blend-multiply"
+                  class="relative w-auto max-w-60 mx-auto rounded-s-full rounded-b-full border-2 border-green-300 shadow-lg overflow-hidden backdrop-blur-[500px] mix-blend-multiply hover:hue-rotate-30 transition duration-300"
                 >
+                  <img
+                    src="./assets/img/Soft Finding Logo.png"
+                    alt="Soft Finding Logo"
+                    class="w-32 absolute top-24 -right-10 -rotate-90"
+                  />
                   <img
                     src="./assets/img/founder.jpg"
                     alt=""
@@ -235,23 +217,91 @@
         </div>
       </section>
 
+      <!-- Product Section -->
+      <section
+        id="product"
+        class="flex justify-center items-center flex-col py-8 overflow-hidden"
+      >
+        <div class="container mx-auto px-4 md:px-0">
+          <div class="">
+            <h2
+              class="text-2xl lg:text-5xl font-exo font-bold text-center uppercase"
+            >
+              Product
+            </h2>
+            <div
+              class="grid grid-cols-1 lg:grid-cols-[1fr_1fr] items-center justify-center gap-4 lg:gap-8 my-8"
+            >
+              <div class="rounded-xl overflow-hidden border-2 border-l-green">
+                <img
+                  src="./assets/img/product/product 1.jpg"
+                  alt="Product"
+                  class="w-full transition duration-300 hover:scale-110"
+                />
+              </div>
+              <div
+                class="grid grid-cols-1 lg:grid-cols-[1fr_1fr] items-center justify-center gap-4 lg:gap-0"
+              >
+                <div
+                  class="rounded-xl overflow-hidden border-2 border-l-green m-0 lg:m-4"
+                >
+                  <img
+                    src="./assets/img/product/product 2.jpg"
+                    alt="Product"
+                    class="w-full transition duration-300 hover:scale-110"
+                  />
+                </div>
+                <div
+                  class="rounded-xl overflow-hidden border-2 border-l-green m-0 lg:m-4"
+                >
+                  <img
+                    src="./assets/img/product/product 3.jpg"
+                    alt="Product"
+                    class="w-full transition duration-300 hover:scale-110"
+                  />
+                </div>
+                <div
+                  class="rounded-xl overflow-hidden border-2 border-l-green m-0 lg:m-4"
+                >
+                  <img
+                    src="./assets/img/product/product 4.jpg"
+                    alt="Product"
+                    class="w-full transition duration-300 hover:scale-110"
+                  />
+                </div>
+                <div
+                  class="rounded-xl overflow-hidden border-2 border-l-green m-0 lg:m-4"
+                >
+                  <img
+                    src="./assets/img/product/product 5.jpg"
+                    alt="Product"
+                    class="w-full transition duration-300 hover:scale-110"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Footer Section -->
       <section
         id="footerTop"
-        class="py-10 bg-gradient-to-b from-white to-l-green"
+        class="py-8 bg-gradient-to-b from-white to-l-green"
       >
         <div class="container mx-auto px-2 md:px-0">
           <div
             class="flex justify-between items-start gap-6 flex-col md:flex-row"
           >
             <!-- Office area -->
-            <div class="w-full flex justify-center items-center flex-col">
+            <div
+              class="w-full flex justify-center items-center flex-col flex-wrap"
+            >
               <h2 class="footHeading text-xl font-exo font-semibold py-2">
                 Office Address
               </h2>
               <div class="py-4 text-lg font-medium font-lato">
                 <p>Rajapur, Pabna Sadar, Pabna</p>
-                <p>Support: web@softfinding.tech</p>
                 <p>Helpline: 01822-079983</p>
                 <p>(Available: Sat - Thu)</p>
               </div>
@@ -267,13 +317,6 @@
                     href="#"
                     class="text-lg font-medium font-lato hover:text-green-600"
                     >About</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="text-lg font-medium font-lato hover:text-green-600"
-                    >Contact</a
                   >
                 </li>
                 <li>
@@ -298,8 +341,9 @@
                 Follow us
               </h2>
               <ul class="flex justify-center items-center flex-wrap gap-6 py-4">
-                <li class="footSocial">
+                <li>
                   <a
+                    class="footSocial"
                     href="https://www.linkedin.com/company/softfinding"
                     target="_blank"
                     aria-label="LinkedIn"
@@ -307,8 +351,9 @@
                     <i class="fa-brands fa-linkedin-in"></i>
                   </a>
                 </li>
-                <li class="footSocial">
+                <li>
                   <a
+                    class="footSocial"
                     href="https://www.facebook.com/softfinding/"
                     target="_blank"
                     aria-label="Facebook"
@@ -316,8 +361,9 @@
                     <i class="fa-brands fa-facebook"></i>
                   </a>
                 </li>
-                <li class="footSocial">
+                <li>
                   <a
+                    class="footSocial"
                     href="mailto:softfinding.tech@gmail.com"
                     target="_blank"
                     aria-label="Email"
@@ -325,8 +371,9 @@
                     <i class="fa-solid fa-envelope"></i>
                   </a>
                 </li>
-                <li class="footSocial">
+                <li>
                   <a
+                    class="footSocial"
                     href="https://www.softfinding.tech/"
                     target="_blank"
                     aria-label="Website"
@@ -335,6 +382,15 @@
                   </a>
                 </li>
               </ul>
+
+              <!-- Branding -->
+              <div class="w-20">
+                <img
+                  src="./assets/img/Soft Finding Logo.png"
+                  alt="Soft Finding"
+                  class="w-full h-full"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -379,9 +435,6 @@
         </svg>
       </span>
     </div>
-
-    <!-- AOS -->
-    <script src="./vendor/aos/js/aos.js"></script>
 
     <!-- Main Script -->
     <script src="./assets/js/app.js"></script>
