@@ -34,6 +34,9 @@ module.exports = {
           },
         },
       },
+      backgroundImage: {
+        'hero-pattern': "url('/assets/img/grain.svg')",
+      }
     },
   },
   plugins: [],
